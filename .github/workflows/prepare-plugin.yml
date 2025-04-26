@@ -54,7 +54,7 @@ jobs:
 
       - name: Install NodeJS dependencies
         if: steps.node-cache.outputs.cache-hit != 'true'
-        run: npm ci --omit=dev
+        run: npm ci
 
       - name: Build the plugin
         run: npm run build:prod
@@ -65,5 +65,5 @@ jobs:
       - name: Release plugin
         uses: actions/upload-artifact@v4
         with:
-          name: my-artifact
+          name: all-things-modal
           path: .
