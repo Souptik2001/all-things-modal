@@ -36,14 +36,14 @@ jobs:
 
       - name: Composer cache dev
         id: composer-cache-dev
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: vendor
           key: composer-dev-${{ hashFiles( 'composer.lock' ) }}-${{ hashFiles( '.github/workflows/main.yml' ) }}
 
       - name: NodeJS cache dev
         id: node-cache-dev
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: node_modules
           key: node-dev-${{ hashFiles( 'package-lock.json' ) }}-${{ hashFiles( '.github/workflows/main.yml' ) }}
@@ -67,14 +67,14 @@ jobs:
 
       - name: Composer cache
         id: composer-cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: vendor
           key: composer-prod-${{ hashFiles( 'composer.lock' ) }}-${{ hashFiles( '.github/workflows/main.yml' ) }}
 
       - name: NodeJS cache
         id: node-cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: node_modules
           key: node-prod-${{ hashFiles( 'package-lock.json' ) }}-${{ hashFiles( '.github/workflows/main.yml' ) }}
