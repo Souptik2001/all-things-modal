@@ -34,6 +34,37 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Composer cache dev
+        id: composer-cache-dev
+        uses: actions/cache@v3
+        with:
+          path: vendor
+          key: composer-dev-${{ hashFiles( 'composer.lock' ) }}-${{ hashFiles( '.github/workflows/main.yml' ) }}
+
+      - name: NodeJS cache dev
+        id: node-cache-dev
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: node-dev-${{ hashFiles( 'package-lock.json' ) }}-${{ hashFiles( '.github/workflows/main.yml' ) }}
+
+      - name: Install Composer dependencies
+        if: steps.composer-cache-dev.outputs.cache-hit != 'true'
+        run: composer install
+
+      - name: Install NodeJS dependencies
+        if: steps.node-cache-dev.outputs.cache-hit != 'true'
+        run: npm ci
+
+      - name: Generate POT
+        run: composer run pot
+
+      - name: Build the plugin
+        run: npm run build:prod
+
+      - name: Cleanup plugin
+        run: rm -rf node_modules vendor .git .github bin .gitignore .gitattributes .editorconfig phpunit.xml.dist phpunit.xml webpack.config.js
+
       - name: Composer cache
         id: composer-cache
         uses: actions/cache@v3
@@ -50,17 +81,11 @@ jobs:
 
       - name: Install Composer dependencies
         if: steps.composer-cache.outputs.cache-hit != 'true'
-        run: composer install
+        run: composer install --no-dev
 
       - name: Install NodeJS dependencies
         if: steps.node-cache.outputs.cache-hit != 'true'
-        run: npm ci
-
-      - name: Generate POT
-        run: composer run pot
-
-      - name: Build the plugin
-        run: npm run build:prod
+        run: npm ci --omit=dev
 
       - name: Release plugin
         uses: actions/upload-artifact@v4
