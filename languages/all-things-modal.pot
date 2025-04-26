@@ -1,0 +1,222 @@
+# Copyright (C) 2025 Souptik Datta
+# This file is distributed under the GPL2.
+msgid ""
+msgstr ""
+"Project-Id-Version: All Things Modal 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/all-things-modal\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-04-26T20:06:48+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: all-things-modal\n"
+
+#. Plugin Name of the plugin
+#: all-things-modal.php
+msgid "All Things Modal"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: all-things-modal.php
+msgid "https://souptik.dev"
+msgstr ""
+
+#. Description of the plugin
+#: all-things-modal.php
+msgid "All things modal you will ever need."
+msgstr ""
+
+#. Author of the plugin
+#: all-things-modal.php
+msgid "Souptik Datta"
+msgstr ""
+
+#. Author URI of the plugin
+#: all-things-modal.php
+msgid "https://profiles.wordpress.org/souptik/"
+msgstr ""
+
+#: inc/classes/class-cache.php:69
+msgid "Cache key is required to create cache object"
+msgstr ""
+
+#: inc/classes/class-cache.php:206
+msgid "Callback passed is not callable"
+msgstr ""
+
+#: inc/classes/class-cache.php:210
+msgid "All parameters for the callback must be in an array"
+msgstr ""
+
+#: inc/classes/class-cache.php:244
+msgid "No valid callback set"
+msgstr ""
+
+#: inc/classes/post-types/class-modal.php:44
+msgctxt "post type general name"
+msgid "Modals"
+msgstr ""
+
+#: inc/classes/post-types/class-modal.php:45
+msgctxt "post type singular name"
+msgid "Modal"
+msgstr ""
+
+#: inc/classes/post-types/class-modal.php:46
+msgctxt "admin menu"
+msgid "Modals"
+msgstr ""
+
+#: inc/classes/post-types/class-modal.php:47
+msgctxt "add new on admin bar"
+msgid "Modals"
+msgstr ""
+
+#: inc/classes/post-types/class-modal.php:48
+msgctxt "post"
+msgid "Add New"
+msgstr ""
+
+#: inc/classes/post-types/class-modal.php:49
+msgid "Add New Modal"
+msgstr ""
+
+#: inc/classes/post-types/class-modal.php:50
+msgid "New Modal"
+msgstr ""
+
+#: inc/classes/post-types/class-modal.php:51
+msgid "Edit Modal"
+msgstr ""
+
+#: inc/classes/post-types/class-modal.php:52
+msgid "View Modal"
+msgstr ""
+
+#: inc/classes/post-types/class-modal.php:53
+msgid "All Modals"
+msgstr ""
+
+#: inc/classes/post-types/class-modal.php:54
+msgid "Search Modal"
+msgstr ""
+
+#: inc/classes/post-types/class-modal.php:55
+msgid "Parent Modal:"
+msgstr ""
+
+#: inc/classes/post-types/class-modal.php:56
+msgid "No Modal found."
+msgstr ""
+
+#: inc/classes/post-types/class-modal.php:57
+msgid "No Modal found in Trash."
+msgstr ""
+
+#: assets/build/blocks/meta-blocks/example-meta-block/index.js:47
+#: assets/build/blocks/meta-blocks/example-meta-block/index.js:27
+msgid "Example Meta Block Field"
+msgstr ""
+
+#: assets/build/blocks/modal/index.js:97
+#: assets/build/blocks/modal/index.js:71
+msgid "Add a modal trigger element"
+msgstr ""
+
+#: assets/build/blocks/modal/index.js:100
+#: assets/build/blocks/modal/index.js:78
+msgid "Required Settings"
+msgstr ""
+
+#: assets/build/blocks/modal/index.js:111
+#: assets/build/blocks/modal/index.js:91
+msgid "Loading"
+msgstr ""
+
+#: assets/build/blocks/modal/index.js:118
+#: assets/build/blocks/modal/index.js:96
+msgid "Advanced Behavior"
+msgstr ""
+
+#: assets/build/blocks/modal/index.js:137
+#: assets/build/blocks/modal/index.js:119
+msgid "Auto Trigger"
+msgstr ""
+
+#: assets/build/blocks/modal/index.js:142
+#: assets/build/blocks/modal/index.js:122
+msgid "Should the modal auto appear after few seconds?"
+msgstr ""
+
+#: assets/build/blocks/modal/index.js:144
+#: assets/build/blocks/modal/index.js:126
+msgid "Auto Trigger Delay"
+msgstr ""
+
+#: assets/build/blocks/modal/index.js:150
+#: assets/build/blocks/modal/index.js:130
+msgid "Time in seconds after which the modal will appear."
+msgstr ""
+
+#: assets/build/blocks/modal/index.js:152
+#: assets/build/blocks/modal/index.js:134
+msgid "Trigger on Scroll"
+msgstr ""
+
+#: assets/build/blocks/modal/index.js:157
+#: assets/build/blocks/modal/index.js:137
+msgid "Should the modal open after the page is scrolled certain height?"
+msgstr ""
+
+#: assets/build/blocks/modal/index.js:159
+#: assets/build/blocks/modal/index.js:141
+msgid "Trigger on Scroll Height"
+msgstr ""
+
+#: assets/build/blocks/modal/index.js:165
+#: assets/build/blocks/modal/index.js:145
+msgid "Height in pixels after which the modal will appear."
+msgstr ""
+
+#: assets/build/blocks/modal/index.js:167
+#: assets/build/blocks/modal/index.js:149
+msgid "Trigger on Page exit"
+msgstr ""
+
+#: assets/build/blocks/modal/index.js:172
+#: assets/build/blocks/modal/index.js:152
+msgid "Should the modal when someone is leaving the page (basically when they focus out of the page)?"
+msgstr ""
+
+#: assets/build/blocks/modal/index.js:174
+#: assets/build/blocks/modal/index.js:156
+msgid "Disable Trigger On Page exit after N Occurrences"
+msgstr ""
+
+#: assets/build/blocks/modal/index.js:180
+#: assets/build/blocks/modal/index.js:160
+msgid "The trigger on page exit behavior will be disabled after N occurrences (set to 0 to continue infinitely)."
+msgstr ""
+
+#: assets/build/blocks/meta-blocks/example-meta-block/block.json
+msgctxt "block title"
+msgid "example-meta-block"
+msgstr ""
+
+#: assets/build/blocks/meta-blocks/example-meta-block/block.json
+msgctxt "block description"
+msgid "An example block viewing and saving post meta"
+msgstr ""
+
+#: assets/build/blocks/modal/block.json
+msgctxt "block title"
+msgid "Modal"
+msgstr ""
+
+#: assets/build/blocks/modal/block.json
+msgctxt "block description"
+msgid "Modal for all your needs"
+msgstr ""

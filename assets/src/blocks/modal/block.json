@@ -1,0 +1,56 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "all-things-modal/modal",
+	"version": "1.0.0",
+	"title": "Modal",
+	"category": "theme",
+	"icon": "smiley",
+	"description": "Modal for all your needs",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"advancedBehaviorAppliesTo": {
+			"type": "string",
+			"default": ""
+		},
+		"modalPostId": {
+			"type": "number",
+			"default": 0
+		},
+		"autoTrigger": {
+			"type": "boolean",
+			"default": false
+		},
+		"autoTriggerDelay": {
+			"type": "number",
+			"default": 10
+		},
+		"triggerOnScroll": {
+			"type": "boolean",
+			"default": false
+		},
+		"triggerOnScrollHeight": {
+			"type": "number",
+			"default": 10
+		},
+		"triggerOnPageExit": {
+			"type": "boolean",
+			"default": false
+		},
+		"triggerOnPageExitDisableAfterNOccurrences": {
+			"type": "number",
+			"default": 0
+		},
+		"modalId": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"textdomain": "all-things-modal",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
