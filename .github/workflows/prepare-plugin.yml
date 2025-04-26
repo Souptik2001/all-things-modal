@@ -50,17 +50,17 @@ jobs:
 
       - name: Install Composer dependencies
         if: steps.composer-cache.outputs.cache-hit != 'true'
-        run: composer install --no-dev
+        run: composer install
 
       - name: Install NodeJS dependencies
         if: steps.node-cache.outputs.cache-hit != 'true'
         run: npm ci
 
-      - name: Build the plugin
-        run: npm run build:prod
-
       - name: Generate POT
         run: composer run pot
+
+      - name: Build the plugin
+        run: npm run build:prod
 
       - name: Release plugin
         uses: actions/upload-artifact@v4
