@@ -21,7 +21,7 @@
   "dependencies": {
     "@travelopia/web-components": "0.9.1",
     "@wordpress/block-editor": "12.0.0",
-    "@wordpress/blocks": "12.9.0",
+    "@wordpress/blocks": "14.11.0",
     "@wordpress/i18n": "4.32.0",
     "@wordpress/interactivity": "^5.4.0",
     "@wordpress/server-side-render": "4.9.0",
